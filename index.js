@@ -1,5 +1,5 @@
 const inquirer = require('inquirer');
-const SVG = require('svg.js');
+// const SVG = require('svg.js');
 const fs = require('fs');
 
 inquirer.prompt([
@@ -26,3 +26,6 @@ inquirer.prompt([
         message: 'Enter the shape color (keyword or hexadecimal):',
     }
 ])
+.then(answers => { 
+    const { text, textColor, shape, shapeColor } = answers;
+})
